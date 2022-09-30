@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#000
+}
+/*=======================Header======================================*/
+header{
+    background: rgb(236, 225, 204);
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.heading{
+    font-style: italic;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    background: url(logo.jpg) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    gap:1vw;
+}
+
+/*========================Main====================================*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 10vw
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    width: 100px;
+    border-radius: 30px;
+    padding: 10px;
+    background: rgb(36, 157, 194);
+    color: white;
+    text-align: center;
+}
+.system{
+    width: 100%;
+    height: 80vw;
+    background:url(https://img.freepik.com/premium-vector/happy-family-infographic_1270-421.jpg?w=2000) no-repeat;
+    background-size:contain;
+}
+.help h2{
+    grid-area:1/1/1/3;
+}
+.help{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    gap:1vw;
+}
+.help-card{
+    display: grid;
+    grid-template:1fr/1fr 1fr ;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgb(41, 41, 41);
+    text-align: center;
+}
+.help-card img{
+    grid-area: 1/1/4/1;
+    border-radius:50%;
+    width: 90px;
+    height: 90px;
+}
+.photo{
+    display: grid;
+    grid-template:repeat(2,1fr)/repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.photo h2{
+    grid-area: 1/1/1/4;
+}
+.photo img{
+    width: 400px;
+    height: 300px;
+}
+/*============================Form=========================*/
+.form-card{
+    margin: 5vw;
+    border-radius: 40px;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    box-shadow: 0px 5px 10px rgb(41, 41, 41);
+}
+form{
+    display: grid;
+    grid-template: 1fr/1fr;
+    gap: 20px; 
+    justify-items: center;
+}
+
+form div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+input[type="text"],textarea,input[type="date"],input[type="password"]{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
+    width: 280px;
+    font-size: 16px;
+}
+input[type="date"]{
+    width: 120px
+}
+label{
+    justify-self: start;
+}
+input[type="submit"]{
+    background: rgb(36, 157, 194);
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    border: 1px solid #000;
+    width:240px;
+    height: 40px;
+}
+/*============================Footer======================*/
+footer{
+    background: rgb(236, 225, 204);
+    height: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
